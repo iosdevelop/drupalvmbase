@@ -1,0 +1,23 @@
+hello_world.hello:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::helloWorld'
+    _title: 'Our Route'
+  requirements:
+    _permission: 'access content'
+
+hello_world.greeting_form:
+  path: '/admin/config/salutation-config'
+  defaults:
+    _form: '\Drupal\hello_world\Form\SalutationConfigurationForm'
+    _title: 'Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+hello_world.jamaica:
+  path: '/jamaica'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::content'
+    _title: 'Jamaica Route'
+  requirements:
+    _permission: 'access content'

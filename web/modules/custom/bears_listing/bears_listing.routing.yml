@@ -1,0 +1,26 @@
+bears_listing.bears_config_form:
+  path: '/admin/config/bears_listing/bearsconfig'
+  defaults:
+    _form: '\Drupal\bears_listing\Form\BearsConfigForm'
+    _title: 'BearsConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+bears_listing.bears_growl:
+  path: '/growl'
+  defaults:
+    _controller: '\Drupal\bears_listing\Controller\BearsController::growl'
+    _title: 'Bears Growl'
+  requirements:
+    _permission: 'access content'
+
+
+bears_listing.bears_controller_growl:
+  path: '/bears_listing/growl'
+  defaults:
+    _controller: '\Drupal\bears_listing\Controller\BearsController::growl'
+    _title: 'growl'
+  requirements:
+    _permission: 'access content'

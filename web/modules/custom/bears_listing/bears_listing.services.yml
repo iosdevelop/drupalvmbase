@@ -1,0 +1,9 @@
+services:
+  logger.channel.bears_listing:
+    parent: logger.channel_base
+    arguments: ['bears_listing']
+  bears_listing.default:
+    class: Drupal\bears_listing\EventSubscriber\BearsListingEventSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }

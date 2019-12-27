@@ -1,0 +1,6 @@
+bears_listing.bears_config_form:
+  title: 'BearsConfigForm'
+  route_name: bears_listing.bears_config_form
+  description: 'Bears menu'
+  parent: system.admin_config_system
+  weight: 99
